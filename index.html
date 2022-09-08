@@ -6,13 +6,16 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
     * {
-      font-size: 1.5rem;
+      padding: 0;
+      border: 0;
+      margin: 0;
+      font-size: 1.25rem;
     }
   </style>
 </head>
 
 <body>
-  <label for="environment">Capture environment:</label>
+  <label for="environment">Capture environment (video):</label>
   <br>
   <input
     type="file"
@@ -21,11 +24,31 @@
     accept="video/*"
   >
   <br><br>
-  <label for="user">Capture user:</label>
+
+  <label for="environment">Capture user (video):</label>
   <br>
   <input
     type="file"
     id="user"
+    capture="user"
+    accept="video/*"
+  >
+  <br><br>
+
+  <label for="environment2">Capture environment (photo):</label>
+  <br>
+  <input
+    type="file"
+    id="environment2"
+    capture="environment"
+    accept="image/*"
+  >
+
+  <label for="user2">Capture user (photo):</label>
+  <br>
+  <input
+    type="file"
+    id="user2"
     capture="user"
     accept="image/*"
   >

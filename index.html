@@ -13,48 +13,74 @@
       font-size: 1rem;
       font-family: Helvetica, sans-serif, Arial;
     }
+    body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #dedede;
+      padding: 15px;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
-  <label for="environment">Capture environment (video):</label>
-  <br>
-  <input
-    type="file"
-    id="environment"
-    capture="environment"
-    accept="video/*"
-  >
+  <section>
+    <div>
+      <label for="environment">Capture environment (video):</label>
+      <br>
+      <input
+        type="file"
+        id="environment"
+        capture="environment"
+        accept="video/*"
+      >
+      <br><br>
+
+      <label for="environment">Capture user (video):</label>
+      <br>
+      <input
+        type="file"
+        id="user"
+        capture="user"
+        accept="video/*"
+      >
+    </div>
+  </section>
   <br><br>
 
-  <label for="environment">Capture user (video):</label>
-  <br>
-  <input
-    type="file"
-    id="user"
-    capture="user"
-    accept="video/*"
-  >
-  <br><br>
-
-  <label for="environment2">Capture environment (photo):</label>
-  <br>
-  <input
-    type="file"
-    id="environment2"
-    capture="environment"
-    accept="image/*"
-  >
-  <br><br>
-
-  <label for="user2">Capture user (photo):</label>
-  <br>
-  <input
-    type="file"
-    id="user2"
-    capture="user"
-    accept="image/*"
-  >
+  <section>
+    <div>
+      <label for="environment2">Capture environment (photo):</label>
+      <br>
+      <input
+        type="file"
+        id="environment2"
+        capture="environment"
+        accept="image/*"
+      >
+      <br><br>
+      <label for="user2">Capture user (photo):</label>
+      <br>
+      <input
+        type="file"
+        id="user2"
+        capture="user"
+        accept="image/*"
+      >
+    </div>
+  </section>
 </body>
 
 </html>
